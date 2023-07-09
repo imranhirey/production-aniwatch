@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./app.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>animwatch clone</title>
+</head>
+
+<body class="bg-bgColor1 px-3 relative">
+
+    <nav class=" container mx-auto text-white p-6 md:pt-20  " >
+
+        <ul class=" space-x-6 font-bold flex-row flex gap-1 overflow-x-auto" id="navMenue">
+            <li class="hover:text-boor bg-simpleBleack p-2 px-6 rounded-xl md:bg-transparent md:p-0   self-baseline text-center "><a href="#!">Home</a></li>
+            <li class="hover:text-boor bg-simpleBleack p-2 px-6 rounded-xl md:bg-transparent md:p-0   self-baseline text-center"><a href="#!">Movies</a></li>
+            <li class="hover:text-boor bg-simpleBleack p-2 px-6 rounded-xl md:bg-transparent md:p-0   self-baseline text-center whitespace-nowrap"><a href="#!">TV series</a></li>
+            <li class="hover:text-boor bg-simpleBleack p-2 px-6 rounded-xl md:bg-transparent md:p-0   self-baseline text-center whitespace-nowrap" ><a href="#!">Most Popular</a></li>
+            <li class="hover:text-boor bg-simpleBleack p-2 px-6 rounded-xl md:bg-transparent md:p-0   self-baseline text-center whitespace-nowrap"><a href="#!">Top Airing</a></li>
+
+        </ul>
+    </nav>
+
+
+    <!-- hero-section -->
+    <section id="hero" class="pt-8">
+        <!-- flex containainer -->
+        <div class="flex container flex-col mx-auto md:flex-row">
+
+
+            <div class="left flex items-center justify-start md:w-1/2 flex-col space-y-6 ">
+                <img class="mx-auto w-[200px]" src="https://aniwatch.to/images/logo.png" alt="aniwatch">
+                
+                <form class="w-full flex space-x-2">
+                    <input class="outline-none rounded py-3 px-7 w-full" type="search" name="search" id="search" placeholder="Search anime..">
+                    <button class="bg-boor rounded-full px-4 text-center flex items-center justify-center"><i class='bx bx-search-alt'></i></button>
+                </form>
+
+                <div id="top">
+                    <p class="text-white font-bold">Top searches :</p>
+                    <p class="text-gray-400">
+                        One Piece , Jujutsu Kaisen  , 2nd SeasonBleach: Thousand-Year Blood War ArcJujutsu Kaisen (TV) , Black Clover  , Naruto: Shippuden , Hell's Paradise , Demon Slayer: Kimetsu no Yaiba  , Swordsmith Village ,  Arc Naruto ,Demon Slayer: Kimetsu no Yaiba .....
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="right md:w-1/2 hidden md:block">
+                <img src="https://aniwatch.to/images/anw-min.webp" alt="anime">
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="bottom container mx-auto w-full  items-center justify-center bg-boor p-6 rounded-bl-xl rounded-br-xl font-bold hidden md:flex"><a href="#!">View site <i class='bx bxs-right-arrow-circle'></i></a></div>
+
+
+
+
+
+    <section id="trending" class="md:mt-20 mt-14">
+        <!-- flex container -->
+        <div class="container flex flex-col mx-auto">
+            <h2 class="font-bold text-white md:text-3xl text-2xl">Top Anime<span class="text-boor"><i class='bx bx-trending-up' ></i></span></h2>
+        
+        <div class="anCards mt-6 flex gap-3 overflow-x-auto" id="animeCards">
+            
+
+            <!-- <div class="anCard w-[100px] md:w-[200px] rounded">
+
+                <div class="image-cover w-[100px] md:w-[200px] overflow-hidden md:h-[300px] h-[170px] relative"><img class="rounded absolute object-cover top-0 left-0 right-0 h-full object-center" src="https://img.flawlessfiles.com/_r/300x400/100/5a/77/5a777cfb390fede844f84a3f85d246e1/5a777cfb390fede844f84a3f85d246e1.jpg"></div>
+
+                <p class="name truncate overflow-hidden text-white">Rurouni Kenshin: Meiji Kenkaku Romantan</p>
+                <span class="text-gray-500 w-full flex justify-between items-center"><p class="year w-1/2 ">2009</p><p class="w-1/2 score space-x-5 flex items-center"><i class='bx bxs-star-half text-boor'></i>9.1</p></span>
+            </div>
+      -->
+
+        </div>
+        
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <section id="recom" class="md:mt-20 mt-14">
+        <!-- flex container -->
+        <div class="container flex flex-col mx-auto">
+            <h2 class="font-bold text-white md:text-3xl text-2xl">recomendations<span class="text-boor"><i class='bx bx-objects-vertical-center'></i></span></h2>
+            <p class="text-gray-400 mt-4">these are animes may you like : </p>
+        <div class="anCards mt-6 flex gap-3 flex-wrap  justify-around" id="recomendations">
+            
+<!-- 
+            <div class="anCard w-[100px] md:w-[200px] rounded">
+                <img class="rounded" src="https://img.flawlessfiles.com/_r/300x400/100/5a/77/5a777cfb390fede844f84a3f85d246e1/5a777cfb390fede844f84a3f85d246e1.jpg" alt="">
+
+                <p class="name truncate overflow-hidden text-white">Rurouni Kenshin: Meiji Kenkaku Romantan</p>
+                <span class="text-gray-500 w-full flex justify-between items-center"><p class="year w-1/2 ">2009</p><p class="w-1/2 score space-x-5 flex items-center"><i class='bx bxs-star-half text-boor'></i>9.1</p></span>
+            </div>
+      -->
+
+        </div>
+        
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+<script src="./app.js"></script>
+</body>
+
+</html>
